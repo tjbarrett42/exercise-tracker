@@ -2,7 +2,6 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 
-
 // Env variables in dotenv file
 require('dotenv').config();
 
@@ -27,9 +26,6 @@ const usersRouter = require('./routes/users');
 
 app.use('/exercises', exercisesRouter);
 app.use('/users', usersRouter);
-
-
-
 
 // Start server
 app.listen(port, () => {
